@@ -1,0 +1,32 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+  user-select: none;
+}
+
+.typography {
+  font-size: clamp(8rem, 28vw, 32rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1;
+  text-align: center;
+  filter: blur(2px);
+}
+
+@media (max-width: 768px) {
+  .typography {
+    font-size: clamp(5rem, 24vw, 15rem);
+  }
+}

@@ -1,0 +1,70 @@
+.pageContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #050508;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  width: 100%;
+  padding: 4rem 10%;
+  flex: 1;
+}
+
+.futureContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.placeholderCard {
+  position: relative;
+  width: 100%;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.placeholderCard h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.placeholderCard p {
+  max-width: 600px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+}
+
+.glowCircle {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
+  opacity: 0.1;
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 3rem 5%;
+  }
+  .placeholderCard {
+    padding: 2rem;
+  }
+}
